@@ -1,0 +1,4 @@
+{ "productosAlaventa":[
+    {"nombre":"Sahumerio","precio" : 1500,"stock" : 20},
+    {"nombre":"Vela", "precio": 2500, "stock": 5},
+    {"nombre":"Perfume", "precio" : 3500, "stock" : 15}]}
