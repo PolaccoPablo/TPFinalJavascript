@@ -3,22 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/PolaccoPablo/PdL/main/imagenes/pngtree-hand-drawn-potion-bottle-lineart-png-image_2154995.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>PDL</title>
 </head>
 <body id="body">
+    <div class="containerTitle">
+        <div class="namePag">
+          <h1 id="titulo">Pócima de luna</h1>
+        </div>
+      </div>
     <aside class="carrito"> 
         <button id="verCarrito">Ver carrito</button>
       </aside>
 
-    <div id="container">
-
+    <div id="container" class="container">
+      
     </div>
+
+    <a href="#titulo" class="up"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg> Ir hacia arriba</a>
+
+    <footer id="footer">
+        <!-- <a href="#titulo">Ir hacia arriba</a> -->
+        <div class="footerColumns">
+          <div class="redes">
+            <h4>Seguinos</h4>
+            <a href="https://es-la.facebook.com/"  target="_blank" rel="noopener"><img width="50" src="https://raw.githubusercontent.com/PolaccoPablo/PdL/main/imagenes/facebook.svg" alt="Logo de Facebook"></a>
+            <a href="https://www.instagram.com/pocima.de.luna/"  target="_blank" rel="noopener"><img width="50" src="https://raw.githubusercontent.com/PolaccoPablo/PdL/main/imagenes/instagram.svg" alt="Logo de instagram"></a>
+          </div>
     
-    <script src="TPFinalJavascript.js"></script>
+          <div>
+            <h4>Información de contacto</h4>
+            <p>Calle: Ce</p>
+            <p>Teléfono: 03-03-456</p>
+            <p>Email: info@misterio.com</p>
+          </div>
+    
+          <div class="newsletter">
+            <h4>Suscripción</h4>
+            <form>
+              <input type="email" id="email" placeholder="Ingresa tu email">
+              <button class="button" type="submit">Suscribirme</button>
+            </form>
+          </div>
+        </div>
+    
+        <div>
+          <p id="derechos">Copyright Pócima de luna - 2023. Todos los derechos reservados.</p>
+        </div>
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=78787878" class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+          </a>
+        </div>
+        <br>
+      </footer>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="TPFinalJavascript.js"></script>
 </body>
 </html>

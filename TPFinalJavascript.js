@@ -63,10 +63,11 @@ const vaciarCarrito = () => {
 const body = document.getElementById("body")
 const titulo = document.createElement("h1")
 titulo.textContent = "Bienvenido a Pocima De Luna"
+titulo.style = "align-self: center;"
 
 const botonCarrito = document.querySelector('#verCarrito')
 botonCarrito.addEventListener('click',verCarrito)
-// lo armo con json.stringify(productos)
+
 
 let productosAlaventa = []
 const obtenerProductos = async () => {
@@ -85,24 +86,35 @@ const cargarProductos = async () => {
     // Resto del código que depende de los productos
     const subtitulo = document.createElement("h3");
     subtitulo.textContent = "Los productos disponibles son:";
+    subtitulo.style = "align-self: center;" 
     body.appendChild(titulo);
     body.appendChild(subtitulo);
 
     let articulos = document.getElementById("container");
     articulos.innerHTML = "";
+    let row = document.createElement("div")
+    row.className = "row"
+    articulos.appendChild(row)
 
     productosAlaventa.forEach((p) => {
         const card = document.createElement("div");
-        card.innerHTML = `<div class="card">
-                            <h5 class="card-title">${p.nombre} </h5>
-                            <p class="card-text">Precio: $ ${p.precio}</p>
-                            <p class="card-stock">Stock: ${p.stock} </p>
-                            <button class="btnProd" value=${p.nombre}> Agregar al carrito </button>
-                        </div>`;
-        articulos.append(card);
+        card.className = "col"
+        card.innerHTML = `<div class="card cardStyle" style="width: 18rem;">
+                                <img src="${p.img}" class="card-img-top" alt="Imagen del producto">
+                                <div class="card-body>
+                                    <h5 class="card-title">${p.nombre} </h5>
+                                    <p class="card-text">Precio: $ ${p.precio}</p>
+                                    <p class="card-stock">Stock: ${p.stock} </p>
+                                    <button class="btnProd" value=${p.nombre}> Agregar al carrito </button>
+                                </div>
+                            </div>
+                         </div>`;
+        row.appendChild(card);
     });
 
     body.appendChild(articulos);
+    body.appendChild(document.querySelector(".up"))
+    body.appendChild(document.getElementById("footer"))
 
 
 
@@ -154,4 +166,3 @@ function agregarACarrito(e) {
         }
     }
 }
-
